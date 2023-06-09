@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    body{
+    margin: 0px;
+    padding: 0px;
+}
+#inp{
+    width: 250px;
+    height: 30px;
+    margin-top: 30px;
+}
+#but{
+    margin-top: 30px;
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+}
+.body{
+border: solid 2px black;
+width:350px;
+height:590px;
+margin-top:50px;
+margin-left:40%;
+background-color: rgb(227, 226, 226);
+}
+</style>
+</head>
+<body>
+    <div class="body">
+        <center>
+            <form action="Register" method="post">
+            <input id="inp" type="text" placeholder="Name" name="name"><br>
+            <input id="inp" type="text" placeholder="Account Number" name="account"><br>
+            <input id="inp" type="number" placeholder="Mobile Number" name="mobile"><br>
+            <input id="inp" type="text" placeholder="IFSC code" name="ifsc"><br>
+            <input id="inp" type="text" placeholder="Branch" name="branch"><br>
+            <input id="inp" type="text" placeholder="Pin Number" name="pin"><br>
+            <input id="inp" type="password" placeholder="Password" name="password"><br>
+            <input id="but" type="submit" value="Register">
+            </form>
+            <a href="login.html"><input id="but" type="submit" value="login"></a>
+        </center>
+    </div>
+</body>
+</html>

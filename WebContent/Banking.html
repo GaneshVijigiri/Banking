@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Banking</title>
+<style>
+	.container{
+	width:99%;
+	height:760px;
+	border: solid black 4px;
+	background-image: radial-gradient(circle, white 0%, rgb(71, 144, 253) 80%);
+    display: flex;
+    flex-direction: column;
+	}
+	#bank{
+	width:100%;
+	height:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+    #bank h1{
+        font-size: 100px;
+        font-family: sans-serif;
+    }
+    #optionsDiv{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .options{
+        width: 100%;
+        height: 130px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        
+    }
+    #withdraw,#transfer,#balance,#deposit,#mini-statement,#change-pin{
+        width: 50%;
+        height: 130px;
+        box-shadow: 1px 1px 8px white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .options :hover{
+        background-color: blue;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    p{
+        font-size: 30px;
+    }
+    #select{
+        font-size: 20px;
+        font-weight: normal;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div id="bank">
+        <a href="#" target="_blank"><h1>BANK <br><p id="select">Please select a transaction</p></h1></a>
+    </div>
+<div id="optionsDiv">
+    <div class="options">
+        <div id="withdraw"><a href="Withdraw.html" target="_blank"><p>CASH WITHDRAWL</p></a></div>
+        <div id="transfer"><a href="MoneyTransfer.html" target="_blank"><p>MONEY TRANSFER</p></a></div>
+    </div>
+    <div class="options">
+        <div id="balance"><a href="BalanceEnquiry.html" target="_blank"><p>BALANCE ENQUIRY</p></a></div>
+        <div id="deposit"><a href="Deposit.html" target="_blank"><p>MONEY DEPOSIT</p></a></div>
+    </div>
+    <div class="options">
+        <div id="mini-statement"><a href="BalanceEnquiry.html" target="_blank"><p>MINI STATEMENT</p></a></div>
+        <div id="change-pin"><a href="ChangePin.html" target="_blank"><p>CHANGE PIN</p></a></div>
+    </div>
+</div>
+</div>
+</body>
+</html>
